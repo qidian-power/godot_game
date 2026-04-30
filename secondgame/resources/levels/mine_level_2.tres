@@ -1,0 +1,23 @@
+[gd_resource type="Resource" script_class="MineLevelConfig" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/config/mine_level_config.gd" id="1_1"]
+[ext_resource type="Resource" path="res://resources/rules/mine_rule_basic.tres" id="2_1"]
+
+[resource]
+script = ExtResource("1_1")
+id = 2
+name = "进阶矿场"
+grid_width = 10
+grid_height = 6
+initial_energy = 36
+max_energy = 36
+energy_cost_per_dig = 1
+default_cell_hp = 3
+mineral_ids = Array[int]([1, 2, 3])
+spawn_total_count = 20
+spawn_rules = ExtResource("2_1")
+end_condition_type = 0
+background_sprite = ""
+special_reward_chance = 0.12
+special_reward_gold_min = 5
+special_reward_gold_max = 15
